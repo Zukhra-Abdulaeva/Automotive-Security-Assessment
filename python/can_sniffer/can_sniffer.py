@@ -1,4 +1,5 @@
 
+"""
 ==========================================================
 Automotive White-Box Security Assessment
 CAN Traffic Sniffer
@@ -12,6 +13,7 @@ Description:
 Requirements:
     pip install python-can
 ==========================================================
+"""
 
 import csv
 from datetime import datetime
@@ -21,7 +23,7 @@ import can
 
 
 class CANSniffer:
-    """
+    
     Simple CAN traffic analyzer for SocketCAN interfaces.
     """
 
