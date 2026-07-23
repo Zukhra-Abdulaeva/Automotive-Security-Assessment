@@ -76,7 +76,6 @@ The methodology is aligned with modern Automotive Cybersecurity practices includ
 
 Technologies
 
-Area	Technologies
 - Communication:      CAN, CAN FD, Automotive Ethernet
 - Diagnostic:         UDS (ISO 14229)
 - Firmware	          Binwalk, Firmware Mod Kit
