@@ -111,8 +111,11 @@ Risk                Assessment	CVSS
 Project Highlights
 
 ✔ White-Box Security Assessment
+
 ✔ Threat Modeling
+
 ✔ ECU Security Validation
+
 ✔ CAN Security Testing
 ✔ Automotive Ethernet
 ✔ UDS Security Access
