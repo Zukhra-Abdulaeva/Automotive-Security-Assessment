@@ -1,7 +1,6 @@
 # Automotive-Security-Assessment
 Automotive-Security-Assessment
-Author: Zukhra Abdulaeva
-Cybersecurity • Automotive Security • Embedded Systems • Security Testing
+Author: Zukhra Abdulaeva • Cybersecurity • Automotive Security • Embedded Systems • Security Testing
 
 End-to-End Automotive White-Box Security Assessment
 Security Validation of a Connected Vehicle
