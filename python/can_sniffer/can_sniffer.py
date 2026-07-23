@@ -23,7 +23,7 @@ import can
 
 
 class CANSniffer:
-    
+    """
     Simple CAN traffic analyzer for SocketCAN interfaces.
     """
 
