@@ -18,43 +18,18 @@ The objective is not only to identify vulnerabilities, but to understand their r
 
 Assessment Workflow
 
-Scope Definition
-      
-        │
-       
-        ▼
-
-System Architecture Review
-        │
-        ▼
-Threat Modeling
-        │
-        ▼
-White-Box Code Analysis
-        │
-        ▼
-CAN / Automotive Ethernet Assessment
-        │
-        ▼
-UDS Security Validation
-        │
-        ▼
-Firmware Review
-        │
-        ▼
-Python Security Automation
-        │
-        ▼
-Risk Assessment
-        │
-        ▼
-Management Summary
-        │
-        ▼
-Technical Report
-        │
-        ▼
-Engineering Recommendations
+1. Scope Definition
+2. System Architecture Review
+3. Threat Modeling
+4. White-Box Code Analysis
+5. CAN / Automotive Ethernet Assessment
+6. UDS Security Validation
+7. Firmware Review
+8. Python Security Automation
+9. Risk Assessment
+10. Management Summary
+11. Technical Report
+12. Engineering Recommendations
 
 
 Assessment Scope
@@ -90,8 +65,7 @@ Source Code
 Firmware Images
 ODX / PDX Diagnostic Descriptions
 Communication Matrix
-Network Architecture
-Security Requirements
+Network ArchitectureSecurity Requirements
 
 The methodology is aligned with modern Automotive Cybersecurity practices including concepts from
 ISO/SAE 21434
@@ -114,11 +88,8 @@ Risk                Assessment	CVSS
 Project Highlights
 
 ✔ White-Box Security Assessment
-
 ✔ Threat Modeling
-
 ✔ ECU Security Validation
-
 ✔ CAN Security Testing
 ✔ Automotive Ethernet
 ✔ UDS Security Access
