@@ -35,12 +35,12 @@ Assessment Workflow
 Assessment Scope
 
 The assessment includes the security validation of typical automotive components such as:
-- ✔ Gateway ECU
-- ✔ Body Control Module (BCM)
-- ✔ Powertrain ECU
-- ✔ Infotainment ECU
-- ✔ Telematics Control Unit (TCU)
-- ✔ ADAS Controller
+- Gateway ECU
+- Body Control Module (BCM)
+- Powertrain ECU
+- Infotainment ECU
+- Telematics Control Unit (TCU)
+- ADAS Controller
 
 Communication technologies:
 - CAN
@@ -85,17 +85,17 @@ Area	Technologies
 - Automation	        Python
 - Risk                Assessment	CVSS
 
-Project Highlights
+Project Highlights ✔
 
-✔ White-Box Security Assessment
-✔ Threat Modeling
-✔ ECU Security Validation
-✔ CAN Security Testing
-✔ Automotive Ethernet
-✔ UDS Security Access
-✔ Firmware Review
-✔ Secure Boot Validation
-✔ Python Test Automation
-✔ Risk Assessment
-✔ Technical Reporting
-✔ Root Cause Analysis
+- White-Box Security Assessment
+- Threat Modeling
+- ECU Security Validation
+- CAN Security Testing
+- Automotive Ethernet
+- UDS Security Access
+- Firmware Review
+- Secure Boot Validation
+- Python Test Automation
+- Risk Assessment
+- Technical Reporting
+- Root Cause Analysis
