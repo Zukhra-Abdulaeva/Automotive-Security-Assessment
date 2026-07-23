@@ -12,7 +12,6 @@ Description:
 Requirements:
     pip install python-can
 ==========================================================
-"""
 
 import csv
 from datetime import datetime
@@ -135,7 +134,6 @@ class CANSniffer:
             print(f"{can_id:<8} {count}")
 
         print("===============================\n")
-
 
 def main():
 
