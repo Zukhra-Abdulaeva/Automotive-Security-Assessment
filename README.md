@@ -35,55 +35,55 @@ Assessment Workflow
 Assessment Scope
 
 The assessment includes the security validation of typical automotive components such as:
-✔ Gateway ECU
-✔ Body Control Module (BCM)
-✔ Powertrain ECU
-✔ Infotainment ECU
-✔ Telematics Control Unit (TCU)
-✔ ADAS Controller
+- ✔ Gateway ECU
+- ✔ Body Control Module (BCM)
+- ✔ Powertrain ECU
+- ✔ Infotainment ECU
+- ✔ Telematics Control Unit (TCU)
+- ✔ ADAS Controller
 
 Communication technologies:
-CAN
-CAN FD
-Automotive Ethernet
-LIN
-FlexRay
+- CAN
+- CAN FD
+- Automotive Ethernet
+- LIN
+- FlexRay
 
 External Interfaces:
-OBD-II
-Bluetooth
-USB
-WiFi
-Cellular
-OTA Updates
+- OBD-II
+- Bluetooth
+- USB
+- WiFi
+- Cellular
+- OTA Updates
 
 Assessment Methodology
 
 The project follows a White-Box approach using access to
-ECU Documentation
-Source Code
-Firmware Images
-ODX / PDX Diagnostic Descriptions
-Communication Matrix
-Network ArchitectureSecurity Requirements
+- ECU Documentation
+- Source Code
+- Firmware Images
+- ODX / PDX Diagnostic Descriptions
+- Communication Matrix
+- Network ArchitectureSecurity Requirements
 
 The methodology is aligned with modern Automotive Cybersecurity practices including concepts from
-ISO/SAE 21434
-Secure Development Lifecycle (SDL)
-Threat Modeling
-Secure Coding
-Root Cause Analysis
+- ISO/SAE 21434
+- Secure Development Lifecycle (SDL)
+- Threat Modeling
+- Secure Coding
+- Root Cause Analysis
 
 Technologies
 
 Area	Technologies
-Communication:      CAN, CAN FD, Automotive Ethernet
-Diagnostic:         UDS (ISO 14229)
-Firmware	          Binwalk, Firmware Mod Kit
-Static Analysis	    CodeQL, Coverity, SonarQube, Cppcheck
-Network	            Wireshark, CANoe, SocketCAN, Scapy
-Automation	        Python
-Risk                Assessment	CVSS
+- Communication:      CAN, CAN FD, Automotive Ethernet
+- Diagnostic:         UDS (ISO 14229)
+- Firmware	          Binwalk, Firmware Mod Kit
+- Static Analysis	    CodeQL, Coverity, SonarQube, Cppcheck
+- Network	            Wireshark, CANoe, SocketCAN, Scapy
+- Automation	        Python
+- Risk                Assessment	CVSS
 
 Project Highlights
 
