@@ -19,8 +19,11 @@ The objective is not only to identify vulnerabilities, but to understand their r
 Assessment Workflow
 
 Scope Definition
+      
         │
+       
         ▼
+
 System Architecture Review
         │
         ▼
