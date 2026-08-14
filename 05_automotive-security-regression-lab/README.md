@@ -4,7 +4,7 @@ From Security Finding to Reproducible Automotive Security Tests
 Dieses Projekt ist ein vollständig simuliertes Automotive‑Security‑Testlabor, das zeigt, wie Security-Findings in automatisierte Regression Tests überführt werden können.
 Es ergänzt das Hauptprojekt Automotive-Security-Assessment um einen modernen, reproduzierbaren Security‑Engineering‑Workflow.
 
-🎯 Ziele des Projekts
+## 🚗 Ziele des Projekts
 Dieses Lab demonstriert:
 
 Entwicklung reproduzierbarer Automotive-Security-Tests
@@ -20,7 +20,31 @@ Finding → Root Cause → Fix → Retest → Regression Test
 
 Die ECU ist vollständig simuliert, sodass das Projekt öffentlich gezeigt werden kann, ohne reale Fahrzeugdaten oder OEM-sensible Informationen.
 
-📁 Projektstruktur
+---
+
+## 🔐 Was dieses Projekt bietet
+
+### ✔️ Reproduzierbare Penetrationstests  
+Jeder Angriff ist als Testfall definiert (`test_cases/`), inklusive Input, Expected Behavior und Evidence.
+
+### ✔️ ECU‑Simulation  
+Die Datei `ecu_simulator.py` simuliert sicherheitskritische Diagnosefunktionen (UDS).
+
+### ✔️ Security Test Runner  
+`test_runner.py` führt alle Security‑Testfälle automatisiert aus.
+
+### ✔️ Evidence‑Format  
+Alle Ergebnisse werden strukturiert dokumentiert (`docs/evidence-format.md`).
+
+### ✔️ Regression Testing  
+Fixes werden durch automatisierte Wiederholtests abgesichert (`tests/test_security_regression.py`).
+
+### ✔️ CI/CD‑Integration  
+GitHub Actions Workflow (`.github/workflows/security-regression.yml`) führt Security‑Tests bei jedem Commit aus.
+
+---
+
+## 📁 Projektstruktur
 automotive-security-regression-lab/
 ├── README.md
 ├── pyproject.toml
@@ -57,7 +81,9 @@ automotive-security-regression-lab/
     └── workflows/
         └── security-regression.yml → GitHub Actions CI
 
-Security-Testfälle
+---
+
+## 🧪 Security-Testfälle
 TC‑001 – Diagnostic Authorization
 Zeigt den klassischen Security-Engineering-Prozess:
 Security Requirement → Angriffshypothese → Test → Evidence → Regression.
@@ -72,7 +98,9 @@ Finding → Root Cause → Fix → Retest → Regression Test
 
 Dieser Case ist besonders relevant für Automotive-Security-Teams, da er zeigt, wie Findings langfristig abgesichert werden.
 
-🔧 Technische Komponenten
+---
+
+## 🔧 Technische Komponenten
 Simulierte ECU (ecu_simulator.py)
 modelliert Diagnosefunktionen
 
@@ -99,7 +127,9 @@ reproduzierbare Ergebnisse
 
 Integration in CI/CD
 
-⚙️ Automatisierung mit GitHub Actions
+---
+
+## ⚙️ Automatisierung mit GitHub Actions
 Die Pipeline security-regression.yml führt bei jedem Commit:
 
 Setup der Python-Umgebung
@@ -110,7 +140,7 @@ Upload der Evidence-Artefakte
 
 Damit wird jeder Fix automatisch validiert.
 
-📄 Beispiel-Finding
+## 📄 Beispiel-Finding
 Im Ordner examples/ befindet sich ein vollständiges Beispiel-Finding:
 
 SEC‑001
@@ -129,7 +159,7 @@ Regression Test
 
 Dieses Finding ist vollständig reproduzierbar und automatisiert.
 
-🧩 Warum dieses Projekt wichtig ist
+## 🧩 Warum dieses Projekt wichtig ist
 Das Regression Lab zeigt einen modernen Automotive-Security-Workflow:
 
 White‑Box Analyse
@@ -140,7 +170,31 @@ Security Testing
 
 Evidence-Erfassung
 
-eschreibung des Diagramms (für dein README oder architecture.md)
+In Automotive‑ und IoT‑Systemen reicht es nicht, eine Schwachstelle einmal zu finden.  
+Ein Angriff ist erst dann wirklich wertvoll, wenn er:
+
+- reproduzierbar ist  
+- validiert werden kann  
+- nach einem Fix erneut getestet wird  
+- und langfristig abgesichert ist  
+
+Genau dafür wurde dieses Lab entwickelt.
+
+Es verbindet klassische Automotive‑Engineering‑Erfahrung (ECUs, Diagnose, Bussysteme)  
+mit moderner Cybersecurity (Penetration Testing, Threat Modeling, Regression).
+
+---
+
+## 🚀 Demo ausführen
+
+```bash
+python examples/run_demo.py
+
+---
+
+## 🚀 📄 Workplace‑Simulation – Automotive Security Regression Lab
+
+Beschreibung des Diagramms
 1. Simulierte ECU
 Enthält Diagnose‑Autorisierung
 
@@ -187,3 +241,141 @@ Fix-Validierung
 Regression Testing
 
 Damit demonstriert es genau die Fähigkeiten, die Automotive-Security-Teams (OEMs, Tier‑1, Engineering-Dienstleister) suchen.
+
+## 🚗🔐 Rolle im Automotive‑Security‑Team
+
+1. Security Engineer
+Entwickelt Angriffsszenarien
+
+Leitet Threat Modeling
+
+Führt Penetrationstests durch
+
+Identifiziert Root Causes
+
+Entwickelt reproduzierbare Security‑Testfälle
+
+Validiert Fixes
+
+Erstellt Findings & Evidence
+
+Nutzen: Du bringst Struktur, Methodik und technische Tiefe in den Security‑Prozess.
+
+2. Software Tester (Security‑Fokus)
+Führt automatisierte Security‑Regression aus
+
+Bewertet Testergebnisse
+
+Meldet Abweichungen
+
+Arbeitet eng mit Security Engineer zusammen
+
+Nutzen: Stellt sicher, dass Fixes dauerhaft wirken.
+
+3. Embedded Developer
+Implementiert Fixes
+
+Verbessert Security‑Mechanismen
+
+Optimiert Diagnose‑ und Kommunikationslogik
+
+Nutzen: Schließt die Lücke zwischen Security‑Analyse und Software‑Entwicklung.
+
+4. System Architect
+Definiert Trust Boundaries
+
+Bewertet Kommunikationspfade
+
+Entscheidet über Security‑Design
+
+Nutzen: Sorgt dafür, dass Security nicht nur im Code, sondern im Systemdesign verankert ist.
+
+5. Quality Engineer
+Integriert Security‑Tests in CI/CD
+
+Bewertet Stabilität und Reproduzierbarkeit
+
+Dokumentiert Compliance (z. B. ISO/SAE 21434)
+
+Nutzen: Macht Security zu einem kontinuierlichen Qualitätsprozess.
+
+## 🛠️ 2. Tools & Infrastruktur
+Technische Basis
+Python (Test Runner, ECU‑Simulation)
+
+pytest (Regression Testing)
+
+GitHub Actions (CI/CD Security Pipeline)
+
+Evidence‑Format (JSON‑basiert)
+
+Threat Modeling (STRIDE, Attack Trees, TARA)
+
+Automotive‑Spezifische Tools
+CANoe / CANalyzer
+
+python‑can
+
+Wireshark
+
+Scapy
+
+Binwalk / Firmware‑Mod‑Kit
+
+🔁 3. Ablaufdiagramm – End‑to‑End Security Workflow
+Dieses Diagramm zeigt, wie dein Projekt in einem echten Workplace eingesetzt wird:
+                ┌──────────────────────────┐
+                │ 1. Scope Definition      │
+                │ attack_surface.md        │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 2. Architekturverständnis │
+                │ architecture.md           │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 3. Threat Modeling        │
+                │ TARA, STRIDE, AttackTree  │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 4. Angriffsszenario       │
+                │ test_cases/TC-001...      │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 5. Penetrationstest       │
+                │ test_runner.py            │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 6. Evidence               │
+                │ evidence-format.md        │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 7. Root Cause Analysis    │
+                │ sample_finding_SEC-001.md │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 8. Fix Implementation     │
+                │ ecu_simulator.py          │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 9. Retest                 │
+                │ test_runner.py            │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 10. Regression Testing    │
+                │ tests/test_security_reg.. │
+                └─────────────┬────────────┘
+                              ↓
+                ┌──────────────────────────┐
+                │ 11. CI/CD Automation      │
+                │ security-regression.yml   │
+                └──────────────────────────┘
+
