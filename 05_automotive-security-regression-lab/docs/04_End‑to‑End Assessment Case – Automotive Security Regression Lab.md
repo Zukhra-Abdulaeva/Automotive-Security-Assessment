@@ -95,6 +95,6 @@ Das Lab kann erweitert werden um:
 ---
 
 **Autorin:** Zukhra Abdulaeva
-**Projekt:** [automotive‑security‑regression‑lab]([https://github.com/Zukhra-Abdulaeva/Automotive-Security-Assessment/05_automotive-security-regression-lab/](https://github.com/Zukhra-Abdulaeva/Automotive-Security-Assessment/tree/main/05_automotive-security-regression-lab))
+**Projekt:** [automotive‑security‑regression‑lab](https://github.com/Zukhra-Abdulaeva/Automotive-Security-Assessment/tree/main/05_automotive-security-regression-lab)
 **Version:** 1.0  
 **Stand:** August 2026
