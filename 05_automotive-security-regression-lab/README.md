@@ -26,31 +26,32 @@ automotive-security-regression-lab/
 ├── pyproject.toml
 │
 ├── docs/
-│   ├── architecture.md        → Systemarchitektur & Testflow
-│   ├── methodology.md         → Security-Testmethodik
-│   └── evidence-format.md     → Standardisiertes Evidence-Format
+│   ├── 01_architecture.md        → Systemarchitektur & Testflow
+│   ├── 02_methodology.md         → Security-Testmethodik
+│   └── 03_evidence-format.md     → Standardisiertes Evidence-Format
 │
-├── threat_model/
-│   └── attack_surface.md      → Angriffsflächen & Threat Model
+├── 01_threat_model/
+│   └── 01_attack_surface.md      → Angriffsflächen & Threat Model
 │
-├── test_cases/
+├── 02_test_cases/
 │   ├── TC-001-diagnostic-authorization.md
 │   ├── TC-002-message-validation.md
 │   └── TC-003-regression-workflow.md
 │
-├── src/
+├── 03_src/
 │   └── security_lab/
 │       ├── __init__.py
-│       ├── ecu_simulator.py   → simulierte ECU
-│       ├── evidence.py        → Evidence-Datenmodell
-│       └── test_runner.py     → Testframework
+│       ├── 01_ecu_simulator.py   → simulierte ECU
+│       ├── 02_evidence.py        → Evidence-Datenmodell
+│       └── 03_test_runner.py     → Testframework
 │
-├── tests/
+├── 04_tests/
 │   └── test_security_regression.py  → pytest Regression Tests
 │
-├── examples/
-│   ├── run_demo.py               → Demo-Skript
-│   └── sample_finding_SEC-001.md → Beispiel-Finding
+├── 05_examples/
+│   ├── 00_run_demo.py               → Demo-Skript
+│   └── 01_sample_finding_SEC-001.md → Beispiel-Finding
+│   └── 02_sample_finding_SEC-002.md → Beispiel-Finding
 │
 └── .github/
     └── workflows/
