@@ -139,6 +139,48 @@ Security Testing
 
 Evidence-Erfassung
 
+eschreibung des Diagramms (für dein README oder architecture.md)
+1. Simulierte ECU
+Enthält Diagnose‑Autorisierung
+
+Enthält Message‑Validation
+
+Keine echten Fahrzeugdaten → sicher & öffentlich
+
+2. Security Lab Framework
+test_runner.py führt Testcases aus
+
+evidence.py erzeugt standardisierte Evidence
+
+3. Security Test Cases
+TC‑001: Diagnostic Authorization
+
+TC‑002: Message Validation
+
+TC‑003: Finding → Fix → Retest → Regression
+
+4. pytest Regression Tests
+automatisierte Testausführung
+
+reproduzierbare Ergebnisse
+
+5. GitHub Actions
+führt alle Regression Tests bei jedem Commit aus
+
+speichert Evidence als Artefakte
+
+6. Dokumentation
+Architektur
+
+Methodik
+
+Evidence‑Format
+
+7. Beispiele
+Demo‑Skript
+
+Beispiel‑Finding (SEC‑001)
+
 Fix-Validierung
 
 Regression Testing
