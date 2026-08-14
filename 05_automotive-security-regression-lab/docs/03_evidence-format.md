@@ -79,26 +79,6 @@ und übergibt sie an das Evidence-Modell.
 
 ---
 
-## 4. Evidence-Erzeugung im Framework
-Evidence wird automatisch erzeugt durch:
-
-test_runner.py
-
-evidence.py
-
-Der Test Runner sammelt:
-
-Eingaben
-
-ECU-Ausgaben
-
-Assertions
-
-Metadaten
-
-und übergibt sie an das Evidence-Modell.
-
----
 ## 5. Evidence in Regression Tests
 Evidence wird in Regression Tests verwendet, um:
 
@@ -109,7 +89,9 @@ Abweichungen zu erkennen
 Ergebnisse über CI zu speichern
 
 GitHub Actions lädt Evidence als Artefakt hoch.
+
 ---
+
 ## 6. Evidence in Findings
 Ein Finding enthält:
 
@@ -120,7 +102,9 @@ Evidence des Retests
 Evidence des Regression Tests
 
 Damit ist der gesamte Lifecycle dokumentiert.
+
 ---
+
 ## 7. Zusammenfassung
 Das Evidence-Format stellt sicher, dass alle Security-Tests:
 
@@ -133,4 +117,5 @@ automatisiert
 CI-kompatibel
 
 sind und bildet die Grundlage für professionelle Automotive-Security-Regression.
+
 ---
